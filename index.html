@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>WyTours - ¡Viaja con nosotros! </title>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="#">WyTours</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#paquetes">Paquetes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <main>
+        <section class="modal fade" tabindex="-1" id="booking-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Reserva un tour</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="#">
+                        <div class="row g-2">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input id="email1" type="email" class="form-control" placeholder="Tu correo electrónico">
+                                    <label for="email1">Correo electrónico</label>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select id="select1" class="form-select">
+                                        <option>Roma, Italia - $760</option>
+                                        <option>Tokyo, Japón - $800</option>
+                                        <option>Seúl, Corea del sur - $950</option>
+                                    </select>
+                                    <label for="select1">Elige un tour</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Registrate</button>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="img/Japan.jpg" class="d-block w-100 c-img" alt="Calle nocturna en Japón">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5 text-uppercase">Descubre el mundo que te rodea</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">The WyTours</h1>
+                    <button class="btn btn-light px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Reserva un tour</button>
+                  </div>
+
+              </div>
+              <div class="carousel-item c-item">
+                <img src="img/Italy.jpg" class="d-block w-100 c-img" alt="Hermosa arquitectura de Italia">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5 text-uppercase">Tours disponibles</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">The WyTours</h1>
+                    <button class="btn btn-light px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Reserva un tour</button>
+                  </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="img/Korea.jpg" class="d-block w-100 c-img" alt="La belleza de Corea del Sur">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5 text-uppercase">La temporada de viajes ha llegado</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">The WyTours</h1>
+                    <button class="btn btn-light px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Reserva un tour</button>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+                </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </section>
+
+        <section class="overview">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 text-center fs-4">
+              <div class="col-xl">
+                <i class="bi bi-airplane-fill me-2"></i>
+                3 increibles paises
+              </div>
+              <div class="col-xl">
+                <i class="bi bi-wallet-fill me-2"></i>
+                Empieza abonando un 5%
+              </div>
+              <div class="col-xl">
+                <i class="bi bi-person-fill-check me-2"></i>
+                  1000 clientes felices
+                </div>
+              </div>
+            </div>
+
+        </section>
+
+      <section id="paquetes" class="pt-md-5">
+        <h2 class="text-center my-5">Paquetes</h2>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <div class="card">
+                <img src="img/Italy1.jpg" class="card-img-top" alt="Roma, Italia">
+                <div class="card-body">
+                  <h5 class="card-title">Roma, Italia - $760</h5>
+                  <p class="card-text">Un destino histórico con el Coliseo y la Fontana de Trevi.</p>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Aventurate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="card">
+                <img src="img/Tokyo.jpg" class="card-img-top" alt="Tokio, Japón">
+                <div class="card-body">
+                  <h5 class="card-title">Tokyo, Japón - $800</h5>
+                  <p class="card-text">Tokio, capital de Japón, combina tradición y modernidad con el templo Senso-ji y el bullicioso Shibuya.</p>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Aventurate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="card">
+                <img src="img/Corea.jpg" class="card-img-top" alt="Seúl, Corea del Sur">
+                <div class="card-body">
+                  <h5 class="card-title">Seúl, Corea del sur - $950</h5>
+                  <p class="card-text">La capital de Corea del Sur, ¡Una experiencia única!</p>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Aventurate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="py-md-5">
+        <h2 class="my-5 text-center">FAQ</h2>
+        <div class="container">
+          <div class="accordion w-75 mx-auto" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Puedo elegir a qué lugares voy?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Claro que sí,</strong> puedes personalizar tu paquete para ir a tus lugares deseados o puedes escoger uno predeterminado.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Que tan largos son los viajes?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>¡Todo depende de tu paquete,</strong> tenemos viajes de días, semanas y meses, tú eliges cuanto tiempo quieres estar allá!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Son todo incluido?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Depende de tu paquete,</strong> Tenemos paquetes todo incluido en cada viaje, puedes escogerlos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </main>
+
+      <footer class="bg-dark py-5 mt-5">
+        <div class="container text-light text-center">
+          <p class="display-5 mb-3">WyTours</p>
+          <small class="text-white-50">&copy; Copyright by Samantha A. All rights reserved. </small>
+        </div>
+      </footer>
+</body>
+</html>
